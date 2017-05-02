@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20450" started-at="2017-05-02T07:43:18Z" finished-at="2017-05-02T07:43:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20450" started-at="2017-05-02T07:43:18Z" finished-at="2017-05-02T07:43:38Z">
+      <class name="com.tripadvisor.tests.FindFlights">
+        <test-method status="PASS" signature="findFlights()[pri:0, instance:com.tripadvisor.tests.FindFlights@91161c7]" name="findFlights" duration-ms="20429" started-at="2017-05-02T13:13:18Z" finished-at="2017-05-02T13:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findFlights -->
+      </class> <!-- com.tripadvisor.tests.FindFlights -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

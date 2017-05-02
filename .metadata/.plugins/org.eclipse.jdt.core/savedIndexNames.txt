@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+D:\Training\.metadata\.plugins\org.eclipse.jdt.core
+2687408644.index

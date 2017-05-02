@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20450" started-at="2017-05-02T07:43:18Z" finished-at="2017-05-02T07:43:38Z">
+  <suite name="Default suite" duration-ms="31908" started-at="2017-05-02T08:43:20Z" finished-at="2017-05-02T08:43:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20450" started-at="2017-05-02T07:43:18Z" finished-at="2017-05-02T07:43:38Z">
+    <test name="Default test" duration-ms="31908" started-at="2017-05-02T08:43:20Z" finished-at="2017-05-02T08:43:52Z">
       <class name="com.tripadvisor.tests.FindFlights">
-        <test-method status="PASS" signature="findFlights()[pri:0, instance:com.tripadvisor.tests.FindFlights@91161c7]" name="findFlights" duration-ms="20429" started-at="2017-05-02T13:13:18Z" finished-at="2017-05-02T13:13:38Z">
+        <test-method status="PASS" signature="findFlights()[pri:0, instance:com.tripadvisor.tests.FindFlights@53b32d7]" name="findFlights" duration-ms="31885" started-at="2017-05-02T14:13:20Z" finished-at="2017-05-02T14:13:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlights -->

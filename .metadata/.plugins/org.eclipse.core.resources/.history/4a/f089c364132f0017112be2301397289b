@@ -21,14 +21,13 @@ public class FindFlights {
 	utilsMethods UM = new utilsMethods();
 	@Test
 	public void findFlights(){
-		driver = UM.initBrowser(driver, "chrome");
+		UM.initBrowser(driver, "chrome");
 		driver.get("https://www.tripadvisor.in");
 		
 		Assert.assertEquals(driver.getTitle(),"TripAdvisor: Read Reviews, Compare Prices & Book"  );
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='rdoFlights']//*[@class='header']")));
 		driver.findElement(By.xpath(".//*[@id='rdoFlights']//*[@class='header']")).click();
-		
 				
 	}
 }

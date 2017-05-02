@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class utilsMethods {
 
 	WebDriver driver;
-	public WebDriver initBrowser(WebDriver driver, String browserName){
+	public void initBrowser(WebDriver driver, String browserName){
 		this.driver=driver;
 		
 		if(browserName.equalsIgnoreCase("chrome")){	
@@ -31,9 +31,6 @@ public class utilsMethods {
 		}else if(browserName.equalsIgnoreCase("ie")){
 			System.setProperty("webdriver.chrome.driver", "");	
 			
-			
 		}
-		
-		return driver;
 	}
 }

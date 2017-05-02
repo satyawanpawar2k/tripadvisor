@@ -5,7 +5,6 @@ package com.tripadvisor.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * @author satyawan.pawar
@@ -26,7 +25,7 @@ public class utilsMethods {
 		}else if(browserName.equalsIgnoreCase("firefox")){
 			String browser = System.getProperty("user.dir")+"\\src\\test\\resources\\geckodriver.exe";
 			System.setProperty("webdriver.gecko.driver", "test\\java\\com\\tripadvisor\\libs\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			
 			
 		}else if(browserName.equalsIgnoreCase("ie")){
 			System.setProperty("webdriver.chrome.driver", "");	

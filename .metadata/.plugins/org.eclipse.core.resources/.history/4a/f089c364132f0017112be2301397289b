@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.tripadvisor.tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+/**
+ * @author satyawan.pawar
+ *02/05/2017
+ */
+public class FindFlights {
+
+	WebDriver driver;
+	utilsMethods UM = new utilsMethods();
+	@Test
+	public void findFlights(){
+		UM.initBrowser(driver, "chrome");
+		driver.get("https://www.tripadvisor.in");
+		
+		Assert.assertEquals(driver.getTitle(),"TripAdvisor: Read Reviews, Compare Prices & Book"  );
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='rdoFlights']//*[@class='header']")));
+		driver.findElement(By.xpath(".//*[@id='rdoFlights']//*[@class='header']")).click();
+				
+	}
+}

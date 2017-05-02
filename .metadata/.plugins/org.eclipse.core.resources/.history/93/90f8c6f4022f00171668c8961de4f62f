@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.tripadvisor.tests;
+
+import org.testng.annotations.Test;
+
+/**
+ * @author satyawan.pawar
+ *
+ */
+public class FindFlights {
+	
+	@Test
+	public void findFlights(){
+		
+	}
+
+}

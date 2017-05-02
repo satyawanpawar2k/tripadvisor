@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package com.tripadvisor.tests;
+
+import org.openqa.selenium.WebDriver;
+
+/**
+ * @author satyawan.pawar
+ *
+ */
+public class utilsMethods {
+
+	public void initBrowser(WebDriver driver, String browserName){
+		if(browserName.equalsIgnoreCase("chrome")){	
+			System.setProperty("webdriver.chrome.driver", "test\\java\\com\\tripadvisor\\libs\\chromedriver.exe");
+			driver.get("https://www.tripadvisor.in");
+		}else if(browserName.equalsIgnoreCase("firefox")){
+			System.setProperty("webdriver.gecko.driver", "test\\java\\com\\tripadvisor\\libs\\geckodriver.exe");
+			driver.get("https://www.tripadvisor.in");
+			
+		}else if(browserName.equalsIgnoreCase("ie")){
+			System.setProperty("webdriver.chrome.driver", "");	
+			driver.get("https://www.tripadvisor.in");
+		}
+	}
+}
